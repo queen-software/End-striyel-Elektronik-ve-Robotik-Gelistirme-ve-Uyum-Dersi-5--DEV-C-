@@ -1,13 +1,17 @@
 # End-striyel-Elektronik-ve-Robotik-Gelistirme-ve-Uyum-Dersi-5--DEV-C++
 ##  //Metinsel ifadeler için arrayler
-        #include <iostream>
+      
+### sizeof() dizinin kaç karakterli olduğu
+
+  #include <iostream>
+  
     
     using namespace std;
     
     int main(int argc, char** argv) {
        //Metinsel ifadeler için arrayler
         
-        string sehirler[] = {"Mardin","Malatya","Istanbul","Ankara","Adiyaman"};
+        string sehirler[] = {"Mardin","Malatya","Istanbul","Ankara","Adiyaman","Izmır"};
         //                    0        1          2          3        4
         //dry - dont't repeat yourself
         cout<<sehirler[0]<<endl;
@@ -34,17 +38,39 @@
              
     
         if(i % 2==0){
-        cout<<"CİFT SAYI:"<<i<<endl;
+        cout<<"CIFT SAYI:"<<i<<endl;
         }  else{
                 cout<<"Tek sayi:"<<i<<endl;
         }
     }   
-        
+        /*
         for(int i = 100;i>=0;i-- ){
                 
                 
                 
                 }
+                
+                
+    */
+    int len = sizeof(sehirler) / sizeof(sehirler[0]);
+    //sizeof(dizi) : dizinin bayt cinsinden boyutu
+    cout<<"sehirler dizisi kac elelmalıdır :"<<len<<endl;
+   
+    //for döngüsü
+    for (int i =0; i<sizeof(sehirler);i++){
+    	cout<<sehirler[i]<<endl;
+	}
+	
+	//foreach
+	int numbers[] = {1,3,5,2,1,6,98};
+	
+	for(int sayi : numbers){
+		cout<<sayi<<endl;
+	}
+	
+	
+	cout<<"sehirler"<<endl;
+	for(string sehir : sehirler){
+		cout<<sehir<<endl;
+	}
     }
-
-
