@@ -74,3 +74,11 @@
 		cout<<sehir<<endl;
 	}
     }
+
+
+
+
+----------------------------------------------------------------------------------
+## //Kullanıcıdan adet ürün adı ve fiyatlarını ve adet sayısı  alarak %20 kdv li ücretlerini ekran çıktısı olarak gösteren kodları yazınız.
+
+
